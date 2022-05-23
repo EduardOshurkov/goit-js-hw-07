@@ -6,7 +6,7 @@ console.log(galleryItems);
 const gallery = document.querySelector(".gallery");
 
 
-const galleyImages = galleryItems.map(
+const galleryImages = galleryItems.map(
     ({ preview, original, description }) =>
         `<div class="gallery__item">
             <a class="gallery__link" href="large-image.jpg">
@@ -20,7 +20,7 @@ const galleyImages = galleryItems.map(
             </div>`
 );
 
-gallery.innerHTML = galleyImages.join("");
+gallery.innerHTML = galleryImages.join("");
 
 const onClickOpenImages = (event) => {
     if (event.target.nodeName !== "IMG") {
